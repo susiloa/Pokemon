@@ -26,5 +26,10 @@ namespace Pokemon
         {
             this.InitializeComponent();
         }
+
+        private void LetsGoBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SetUpPage), null);
+        }
     }
 }

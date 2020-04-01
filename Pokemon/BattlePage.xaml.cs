@@ -20,11 +20,16 @@ namespace Pokemon
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage2 : Page
+    public sealed partial class BattlePage : Page
     {
-        public BlankPage2()
+        public BattlePage()
         {
             this.InitializeComponent();
+        }
+
+        private void HomeBtn_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
         }
     }
 }

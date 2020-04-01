@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Pokemon.BlankPage1"
+    x:Class="Pokemon.SetUpPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Pokemon"
@@ -8,7 +8,17 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <Button x:Name="LetsBattleBtn"
+                Content="Let's Battle!"
+                Height="50"
+                Width="200"
+                FontSize="30"
+                Foreground="Black"
+                Background="LightGray"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="20, 640, 30, 0"
+                Click="LetsBattleBtn_OnClick"/>
+    </StackPanel>
 </Page>
