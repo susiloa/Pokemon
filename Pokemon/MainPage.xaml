@@ -6,9 +6,31 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+    xmlns:xamlAnimatedGif="using:XamlAnimatedGif">
+    <StackPanel Background="Black">
+        <Image x:Name="StartGift" 
+               xamlAnimatedGif:AnimationBehavior.SourceUri="Assets/AshKetchum.gif"  
+               Height="693" Width="1229" 
+               Margin="30"
+               RenderTransformOrigin="0.993,5.428"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Hello there! Welcome to the world of POKEMON!&#xA;My name is Ash and this is Pikachu.&#xA;Come on! Let's go to Professor Oak's laboratoy!"
+                       FontSize="40"
+                       FontWeight="ExtraBold"
+                       Foreground="White"
+                       Margin="110, 10, 5, 10"
+                       HorizontalAlignment="Center"/>
+            <Button Content="Let's Go!"
+                    Height="50"
+                    Width="200"
+                    FontSize="30"
+                    Foreground="Black"
+                    Background="LightGray"
+                    VerticalAlignment="Bottom"
+                    Margin="80, 10, 0, 30"/>
+        </StackPanel>
 
-    <Grid>
-
-    </Grid>
+    </StackPanel>
 </Page>

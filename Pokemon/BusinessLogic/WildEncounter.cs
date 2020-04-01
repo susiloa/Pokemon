@@ -22,20 +22,20 @@ namespace Pokemon.BusinessLogic
         public WildEncounter(Pokemon pokemon, string reward)
         {
             this.ActivePokemon = pokemon;
-            this.Reward = reward;
+            this._reward = reward;
         }
 
-        public bool BattleLost()
+        public void BattleLost() //bool
         {
 
         }
 
-        public bool TryCapture()
+        public void TryCapture() //bool
         {
 
         }
 
-        public string GetReward()
+        public void GetReward() //string
         {
 
         }

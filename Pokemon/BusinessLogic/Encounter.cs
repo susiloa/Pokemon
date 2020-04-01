@@ -18,12 +18,12 @@ namespace Pokemon.BusinessLogic
 			get { return _reward; }
 		}
 
-        public bool BattleLost()
+        public void BattleLost() //bool
         {
 
         }
 
-        public string GetReward()
+        public void GetReward() //string
         {
 
         }

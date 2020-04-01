@@ -33,10 +33,10 @@ namespace Pokemon.BusinessLogic
 
         public Move(string name, string type, int accuracy, int power)
         {
-            this.MoveName = name;
-            this.MoveType = type;
-            this.MoveAccuracy = accuracy;
-            this.MovePower = power;
+            this._moveName = name;
+            this._moveType = type;
+            this._moveAccuracy = accuracy;
+            this._movePower = power;
         }
 
     }
