@@ -10,6 +10,23 @@ namespace Pokemon.BusinessLogic
 {
     public class Encounter
     {
+        public Pokemon ActivePokemon { get; set; }
+		private string _reward;
 
-    }
+		public string Reward
+		{
+			get { return _reward; }
+		}
+
+        public bool BattleLost()
+        {
+
+        }
+
+        public string GetReward()
+        {
+
+        }
+
+	}
 }
