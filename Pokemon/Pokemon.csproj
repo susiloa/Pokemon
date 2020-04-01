@@ -122,6 +122,8 @@
     <Compile Include="BattlePage.xaml.cs">
       <DependentUpon>BattlePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BusinessLogic\Encounter.cs" />
+    <Compile Include="BusinessLogic\WildEncounter.cs" />
     <Compile Include="SetUpPage.xaml.cs">
       <DependentUpon>SetUpPage.xaml</DependentUpon>
     </Compile>
