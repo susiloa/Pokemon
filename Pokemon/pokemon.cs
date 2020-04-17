@@ -76,6 +76,24 @@ public class Pokemon
 		Machamp.Add(Defense, 80);
 		Machamp.Add(Speed, 55);
 
+		Dictionary<string, int> Pidgeot = new Dictionary<string, int>();
+		Machamp.Add(Health, 83);
+		Machamp.Add(Attack, 80);
+		Machamp.Add(Defense, 75);
+		Machamp.Add(Speed, 101);
+
+		Dictionary<string, int> Dugtrio = new Dictionary<string, int>();
+		Machamp.Add(Health, 35);
+		Machamp.Add(Attack, 100);
+		Machamp.Add(Defense, 50);
+		Machamp.Add(Speed, 120);
+
+		Dictionary<string, int> Nidoking = new Dictionary<string, int>();
+		Machamp.Add(Health, 81);
+		Machamp.Add(Attack, 102);
+		Machamp.Add(Defense, 77);
+		Machamp.Add(Speed, 85);
+
 		Dictionary<string, string> PokemonType = new Dictionary<string, string>();
 		PokemonType.Add(Charizard, Fire);
 		PokemonType.Add(Blastoise, Water);
@@ -89,5 +107,8 @@ public class Pokemon
 		PokemonType.Add(Articuno, Ice);
 		PokemonType.Add(Dragonite, Dragon);
 		PokemonType.Add(Machamp, Fighting);
+		PokemonType.Add(Pidgeot, Flying);
+		PokemonType.Add(Dugtrio, Ground);
+		PokemonType.Add(Poison, Nidoking);
 	}
 }
