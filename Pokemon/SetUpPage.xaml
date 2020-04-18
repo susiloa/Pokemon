@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
+    <StackPanel Orientation="Horizontal" >
         <Button x:Name="LetsBattleBtn"
                 Content="Let's Battle!"
                 Height="50"
@@ -16,9 +16,19 @@
                 FontSize="30"
                 Foreground="Black"
                 Background="LightGray"
-                HorizontalAlignment="Right"
-                VerticalAlignment="Bottom"
-                Margin="20, 640, 30, 0"
                 Click="LetsBattleBtn_OnClick"/>
+    
+        <StackPanel Orientation="Horizontal">
+           
+            <StackPanel Orientation="Vertical" Height="164">
+                <TextBlock FontSize="24" >Chose Your Team</TextBlock>
+                <RadioButton Content="Green" Tag="Green" Checked="BGRadioButton_Checked"/>
+                <RadioButton Content="Yellow" Tag="Yellow" Checked="BGRadioButton_Checked"/>
+                <RadioButton Content="Blue" Tag="Blue" Checked="BGRadioButton_Checked"/>
+                <RadioButton Content="White" Tag="White" Checked="BGRadioButton_Checked" IsChecked="True"/>
+            </StackPanel>
+        </StackPanel>
+   
+        
     </StackPanel>
 </Page>
