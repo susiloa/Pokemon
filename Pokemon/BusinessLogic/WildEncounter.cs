@@ -10,34 +10,48 @@ namespace Pokemon.BusinessLogic
 {
     public class WildEncounter: Encounter
     {
+        public int Attempt;
+
+        //Properties
         public Pokemon ActivePokemon { get; set; }
-
         private string _reward;
-
         public string Reward
         {
             get { return _reward; }
         }
 
+        //Constructor
         public WildEncounter(Pokemon pokemon, string reward)
         {
             this.ActivePokemon = pokemon;
             this._reward = reward;
         }
 
-        public void BattleLost() //bool
+        //Methods
+        public override bool BattleLost()
         {
-
+            if (ActivePokemon.Health == 0) return true;
+            else return false;
         }
 
-        public void TryCapture() //bool
+        public bool TryCapture()
         {
+            if (Pokemon.Health == 0)
+            {
+                Random randomNumber = new Random();
+                Attempt = randomNumber.Next(1, 7);
 
+                if (Attempt % 2 != 0) return true;
+                else return false;
+            }
+
+            else return false;
         }
 
-        public void GetReward() //string
-        {
 
+        public override string GetReward() //string
+        {
+            return "Congratulations you won 100 EXP!";
         }
     }
 }
