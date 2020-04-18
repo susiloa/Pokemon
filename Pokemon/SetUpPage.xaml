@@ -9,26 +9,29 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel Orientation="Horizontal" >
+        <StackPanel.Background>
+            <ImageBrush ImageSource="/Assets/setup1.jpg"/>
+        </StackPanel.Background>
+
+        <StackPanel Orientation="Horizontal" Height="81" >
+            <ComboBox  x:Name="PokemonCombo" Header="Pick a Pokemon" PlaceholderText="Pick a color" Width="298" FontSize="24" Margin="100,0,100,0" ItemsSource="{x:Bind pokemon}">
+                <x:String></x:String>
+                <x:String>Green</x:String>
+                <x:String>Red</x:String>
+                <x:String>Yellow</x:String>
+            </ComboBox>
+
+        </StackPanel>
         <Button x:Name="LetsBattleBtn"
-                Content="Let's Battle!"
+                Content="Start!"
                 Height="50"
                 Width="200"
                 FontSize="30"
-                Foreground="Black"
-                Background="LightGray"
-                Click="LetsBattleBtn_OnClick"/>
-    
-        <StackPanel Orientation="Horizontal">
-           
-            <StackPanel Orientation="Vertical" Height="164">
-                <TextBlock FontSize="24" >Chose Your Team</TextBlock>
-                <RadioButton Content="Green" Tag="Green" Checked="BGRadioButton_Checked"/>
-                <RadioButton Content="Yellow" Tag="Yellow" Checked="BGRadioButton_Checked"/>
-                <RadioButton Content="Blue" Tag="Blue" Checked="BGRadioButton_Checked"/>
-                <RadioButton Content="White" Tag="White" Checked="BGRadioButton_Checked" IsChecked="True"/>
-            </StackPanel>
-        </StackPanel>
-   
-        
+                Foreground="White"
+                Background="Black"
+                Click="LetsBattleBtn_OnClick"
+                />
+
+
     </StackPanel>
 </Page>
