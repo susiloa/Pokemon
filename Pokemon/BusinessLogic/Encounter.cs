@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Pokemon.BusinessLogic
 {
-    public class Encounter
+    /* An abstract class that keeps track of the status of the pokemon (wild or traniner) */
+    public abstract class Encounter
     {
         public Pokemon ActivePokemon { get; set; }
 		private string _reward;
@@ -16,13 +17,15 @@ namespace Pokemon.BusinessLogic
 		public string Reward
 		{
 			get { return _reward; }
-		}
+        }
 
+        //	Check if the battle had lost, and what would happen if so
         public void BattleLost() //bool
         {
 
         }
 
+        // Send a string message of the reward that is received
         public void GetReward() //string
         {
 
