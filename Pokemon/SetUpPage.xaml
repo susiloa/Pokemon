@@ -14,7 +14,7 @@
         </StackPanel.Background>
 
         <StackPanel Orientation="Horizontal" Height="81" >
-            <ComboBox  x:Name="PokemonCombo" Header="Pick a Pokemon" PlaceholderText="click here for pokemon" Width="298" FontSize="24" Margin="100,0,100,0" SelectionChanged="PokemonCombo_SelectionChanged" ItemsSource="{x:Bind pokemons}">
+            <ComboBox  x:Name="PokemonCombo" Header="Pick a Pokemon" PlaceholderText="click here for pokemon" Width="400" FontSize="24" Margin="100,0,100,0" SelectionChanged="PokemonCombo_SelectionChanged" ItemsSource="{x:Bind pokemons}">
                 <x:String></x:String>
                 <x:String>Green</x:String>
                 <x:String>Red</x:String>
@@ -31,7 +31,7 @@
                 Background="Black"
                 Click="LetsBattleBtn_OnClick"
                 />
-        <Image x:Name="pokemonImage" Width="90" Margin="10, 0, 20, 10"/>
+        <Image x:Name="pokemonImage" Width="300" Margin="10, 0, 20, 10"/>
 
 
     </StackPanel>

@@ -6,6 +6,7 @@ using System.Net.Mime;
 using Newtonsoft.Json;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
+using System.Threading.Tasks;
 
 namespace Pokemon
 {
@@ -33,7 +34,7 @@ namespace Pokemon
 
         public static List<Pokemon> GetPokemons()
         {
-            String pokemonData = File.ReadAllText(@"./PokemonTable.txt");
+            String pokemonData = File.ReadAllText($"./Assets/PokemonTable.txt");
             List<Pokemon> pokemonList = JsonConvert.DeserializeObject<List<Pokemon>>(pokemonData);
             return pokemonList;
         }
@@ -48,6 +49,7 @@ namespace Pokemon
             Speed = speed;
             Moves = moves;
             IsDead = false;
+            Image = new Image();
             ImgSrc = Name + @".png";
         }
 

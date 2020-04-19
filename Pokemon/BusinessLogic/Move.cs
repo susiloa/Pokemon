@@ -23,7 +23,7 @@ namespace Pokemon
 
         public static List<Move> GetMoves()
         {
-            String moveData = File.ReadAllText(@"./MoveTable.txt");
+            String moveData = File.ReadAllText($"/Assets/MoveTable.txt");
             List<Move> moveList = JsonConvert.DeserializeObject<List<Move>>(moveData);
             return moveList;
         }

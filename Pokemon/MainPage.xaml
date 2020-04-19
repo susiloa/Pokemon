@@ -9,7 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
     xmlns:xamlAnimatedGif="using:XamlAnimatedGif">
-    <StackPanel Background="Black">
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="/Assets/setup1.jpg"/>
+        </StackPanel.Background>
         <Image x:Name="StartGift" 
                xamlAnimatedGif:AnimationBehavior.SourceUri="Assets/AshKetchum.gif"  
                Height="549" Width="980"

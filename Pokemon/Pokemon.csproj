@@ -147,12 +147,19 @@
     <Content Include="Assets\AshKetchum.gif" />
     <Content Include="Assets\Blastoise.png" />
     <Content Include="Assets\Charizard.png" />
-    <Content Include="Assets\Chectnaught.png" />
+    <Content Include="Assets\Chesnaught.png" />
     <Content Include="Assets\Delphox.png" />
     <Content Include="Assets\Eiscue.png" />
+    <Content Include="Assets\forestbackground.jpg" />
+    <Content Include="Assets\Greninja.png" />
+    <Content Include="Assets\MoveTable.txt" />
     <Content Include="Assets\Pikachu.png" />
+    <Content Include="Assets\PokemonTable.txt" />
+    <Content Include="Assets\Raichu.png" />
     <Content Include="Assets\setup1.jpg" />
     <Content Include="Assets\setup2.jpg" />
+    <Content Include="Assets\TypeTable.txt" />
+    <Content Include="Assets\Venusaur.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -193,10 +200,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Raichu.webp" />
-    <None Include="Assets\Venusaur.webp" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -1,0 +1,182 @@
+[
+  {
+    "Name": "Fire Spin",
+    "Type": "fire",
+    "Accuracy": 85,
+    "Power": 80
+  },
+  {
+    "Name": "Fire Fang",
+    "Type": "fire",
+    "Accuracy": 95,
+    "Power": 80
+  },
+  {
+    "Name": "Heat Wave",
+    "Type": "fire",
+    "Accuracy": 95,
+    "Power": 80
+  },
+  {
+    "Name": "Mystical Fire",
+    "Type": "fire",
+    "Accuracy": 95,
+    "Power": 80
+  },
+  {
+    "Name": "Fire Spin",
+    "Type": "fire",
+    "Accuracy": 95,
+    "Power": 80
+  },
+  {
+    "Name": "Flame Thrower",
+    "Type": "fire",
+    "Accuracy": 95,
+    "Power": 80
+  },
+{
+    "Name": "Water Gun",
+    "Type": "water",
+    "Accuracy": 100,
+    "Power": 40
+  },
+{
+    "Name": "Aqua Tail ",
+    "Type": "water",
+    "Accuracy": 90,
+    "Power": 35
+  },
+{
+    "Name": "Hydro Pump",
+    "Type": "water",
+    "Accuracy": 80,
+    "Power": 90
+  },
+{
+    "Name": "Water Shuriken ",
+    "Type": "water",
+    "Accuracy": 100 ,
+    "Power": 40
+  },
+{
+    "Name": "Bubble ",
+    "Type": "water",
+    "Accuracy": 100 ,
+    "Power": 90
+  },
+{
+    "Name": "Hydro Pump ",
+    "Type": "water",
+    "Accuracy": 80 ,
+    "Power": 110
+  },
+  {
+    "Name": "Petal Blizzard",
+    "Type": "grass",
+    "Accuracy": 100,
+    "Power": 90
+  },
+  {
+    "Name": "Solar Beam",
+    "Type": "grass",
+    "Accuracy": 100,
+    "Power": 120
+  },
+  {
+    "Name": "Vine Whip",
+    "Type": "grass",
+    "Accuracy": 100,
+    "Power": 45
+  },
+  {
+    "Name": "Wood Hammer",
+    "Type": "grass",
+    "Accuracy": 100,
+    "Power": 120
+  },
+  {
+    "Name": "Seed Bomb",
+    "Type": "grass",
+    "Accuracy": 100,
+    "Power": 80
+  },
+  {
+    "Name": "Wine Whip",
+    "Type": "grass",
+    "Accuracy": 100,
+    "Power": 45
+  },
+  {
+    "Name": "Thunder Bolt",
+    "Type": "electric",
+    "Accuracy": 100,
+    "Power": 90
+  },
+  {
+    "Name": "Thunder Shock",
+    "Type": "electric",
+    "Accuracy": 100,
+    "Power": 40
+  },
+  {
+    "Name": "Spark",
+    "Type": "electric",
+    "Accuracy": 100,
+    "Power": 65
+  },
+  {
+    "Name": "Thunderbolt",
+    "Type": "electric",
+    "Accuracy": 100,
+    "Power": 90
+  },
+  {
+    "Name": "Thunder Shock",
+    "Type": "electric",
+    "Accuracy": 100,
+    "Power": 40
+  },
+  {
+    "Name": "Thunder Punch",
+    "Type": "electric",
+    "Accuracy": 100,
+    "Power": 75
+  },
+  {
+    "Name": "Ice Beam",
+    "Type": "ice",
+    "Accuracy": 70,
+    "Power": 90
+  },
+  {
+    "Name": "Blizzard",
+    "Type": "ice",
+    "Accuracy": 100,
+    "Power": 110
+  },
+  {
+    "Name": "Ice Shard",
+    "Type": "ice",
+    "Accuracy": 95,
+    "Power": 40
+  },
+  {
+    "Name": "Ice Wind",
+    "Type": "ice",
+    "Accuracy": 70,
+    "Power": 55
+  },
+  {
+    "Name": "Blizzard",
+    "Type": "ice",
+    "Accuracy": 100,
+    "Power": 110
+  },
+  {
+    "Name": "Freeze Dry",
+    "Type": "ice",
+    "Accuracy": 100,
+    "Power": 70
+  }
+]

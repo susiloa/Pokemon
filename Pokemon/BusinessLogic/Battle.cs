@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Pokemon
 {
@@ -7,7 +8,8 @@ namespace Pokemon
 
         public Pokemon userPokemon { get;}
         public Encounter encounter { get;}
-        public String BattleMessage { get; set; }
+        public List<String> BattleMessage { get; set; }
+        public bool GameEnd { get; private set; }
 
         private bool isPlayerTurn;
         private Pokemon enemyPokemon;
@@ -19,6 +21,7 @@ namespace Pokemon
         {
             this.userPokemon = userPokemon;
             this.encounter = encounter;
+            BattleMessage = new List<string>();
         }
 
         public void BattleStart()
@@ -37,54 +40,15 @@ namespace Pokemon
 
             //BattleMessage
             Console.WriteLine((isPlayerTurn) ? "Player Goes First" : "Enemy Goes First");
+            BattleMessage.Add((isPlayerTurn) ? "Player Goes First" : "Enemy Goes First");
             startOfTurn();
         }
 
         public void startOfTurn()
         {
-            BattleMessage = "";
             if (!isPlayerTurn)
             {
                 AttackPhase(enemyPokemon.SelectRandomMove());
-            }
-            else
-            {
-                Console.WriteLine("Select a Move:");
-                for(int i = 0; i < userPokemon.Moves.Count; i++)
-                {
-                    Console.WriteLine(userPokemon.Moves[i]);
-                }
-                int selection = int.Parse(Console.ReadLine());
-
-                while(selection == 3)
-                {
-                    if(encounter.GetType() == typeof(WildEncounter))
-                    {
-                        WildEncounter enc = (WildEncounter)encounter;
-                        if(enc.TryCapture())
-                        {
-                            BattleMessage += "Successfully captured " + enc.ActivePokemon + "!\n";
-                            selection = -1;
-                            EndOfTurn();
-                        }
-                        else
-                        {
-                            BattleMessage += "Failed to capture " + enc.ActivePokemon + "\n";
-                            selection = -1;
-                            EndOfTurn();
-                        }
-                    }
-                    else
-                    {
-                       Console.WriteLine("Can't capture a Trainer Pokemon");
-                        Console.Write("Select a Move:");
-                        selection = int.Parse(Console.ReadLine());
-                    }
-                }
-                if (selection != 3 || selection != -1)
-                {
-                    AttackPhase(userPokemon.Moves[selection]);
-                }
             }
         }
 
@@ -94,14 +58,14 @@ namespace Pokemon
             if (isPlayerTurn)
             {
                 damage = userPokemon.ExecuteAttack(enemyPokemon, selectedMove);
-                BattleMessage += userPokemon + " attacked with " + selectedMove + "\n";
-                BattleMessage += enemyPokemon + " received " + damage + " damage\n";
+                BattleMessage.Add(userPokemon + " attacked with " + selectedMove + "\n");
+                BattleMessage.Add(enemyPokemon + " received " + damage + " damage\n");
             }
             else
             {
                 damage = enemyPokemon.ExecuteAttack(userPokemon, selectedMove);
-                BattleMessage += enemyPokemon + " attacked with " + selectedMove + "\n";
-                BattleMessage += userPokemon + " received " + damage + " damage\n";
+                BattleMessage.Add(enemyPokemon + " attacked with " + selectedMove + "\n");
+                BattleMessage.Add(userPokemon + " received " + damage + " damage\n");
             }
             moveCount++;
             EndOfTurn();
@@ -109,7 +73,7 @@ namespace Pokemon
 
         public void EndOfTurn()
         {
-            Console.WriteLine(BattleMessage);
+
             if (userPokemon.IsDead)
             {
                 userVictory = false;
@@ -136,23 +100,16 @@ namespace Pokemon
 
         public void EndBattle()
         {
+            GameEnd = true;
+
             //if (userVictory)
             //{
-            //    MessageBox.show(encounter.ShowReward());
+            //    Console.WriteLine(encounter.GetReward());
             //}
             //else
             //{
-            //    MessageBox.show("I'm sorry, you have lost the game.");
+            //    Console.WriteLine("I'm sorry, you have lost the game.");
             //}
-
-            if (userVictory)
-            {
-                Console.WriteLine(encounter.GetReward());
-            }
-            else
-            {
-                Console.WriteLine("I'm sorry, you have lost the game.");
-            }
         }
     }
 }
