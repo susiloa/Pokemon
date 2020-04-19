@@ -151,6 +151,7 @@ namespace Pokemon
             PlayerPokemonHealth.Text = battle.userPokemon.Health.ToString();
             EnemyPokemonHealth.Text = battle.encounter.ActivePokemon.Health.ToString();
         }
+        //commit tesr
 
 
     }
