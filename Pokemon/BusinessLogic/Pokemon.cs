@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pokemon.BusinessLogic
 {
+
     public class Pokemon
     {
     }

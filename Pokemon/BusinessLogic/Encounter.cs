@@ -12,24 +12,24 @@ namespace Pokemon.BusinessLogic
     public abstract class Encounter
     {
         public Pokemon ActivePokemon { get; set; }
-		private string _reward;
+        private string _reward;
 
-		public string Reward
-		{
-			get { return _reward; }
+        public string Reward
+        {
+            get { return _reward; }
         }
 
         //	Check if the battle had lost, and what would happen if so
-        public void BattleLost() //bool
+        public virtual bool BattleLost()
         {
-
+            return false;
         }
 
         // Send a string message of the reward that is received
-        public void GetReward() //string
+        public virtual string GetReward()
         {
-
+            return "Congratulations you won 100 EXP!";
         }
 
-	}
+    }
 }

@@ -8,17 +8,30 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
+    <StackPanel Orientation="Horizontal" >
+        <StackPanel.Background>
+            <ImageBrush ImageSource="/Assets/setup1.jpg"/>
+        </StackPanel.Background>
+
+        <StackPanel Orientation="Horizontal" Height="81" >
+            <ComboBox  x:Name="PokemonCombo" Header="Pick a Pokemon" PlaceholderText="Pick a color" Width="298" FontSize="24" Margin="100,0,100,0" ItemsSource="{x:Bind pokemon}">
+                <x:String></x:String>
+                <x:String>Green</x:String>
+                <x:String>Red</x:String>
+                <x:String>Yellow</x:String>
+            </ComboBox>
+
+        </StackPanel>
         <Button x:Name="LetsBattleBtn"
-                Content="Let's Battle!"
+                Content="Start!"
                 Height="50"
                 Width="200"
                 FontSize="30"
-                Foreground="Black"
-                Background="LightGray"
-                HorizontalAlignment="Right"
-                VerticalAlignment="Bottom"
-                Margin="20, 640, 30, 0"
-                Click="LetsBattleBtn_OnClick"/>
+                Foreground="White"
+                Background="Black"
+                Click="LetsBattleBtn_OnClick"
+                />
+
+
     </StackPanel>
 </Page>
