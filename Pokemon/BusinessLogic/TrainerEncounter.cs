@@ -9,9 +9,7 @@ using System.Threading.Tasks;
 namespace Pokemon
 {
     /* An Inherited class from Encounter for Pokemon that is owned by a trainer.
-     Trainer may have more than 1 pokemon, and capturing is not allowed.
-    NextPokemon : if the current active pokemon has been defeated (HP <= 0), 
-    the next pokemon in the list would be moved to the current active pokemon  */
+     Trainer may have more than 1 pokemon, and capturing is not allowed. */
     class TrainerEncounter: Encounter
     {
         //Properties
@@ -50,6 +48,4 @@ namespace Pokemon
         }
     }
 }
-
-//testing 
 
