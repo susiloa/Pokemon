@@ -6,21 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:classes="using:PokemonConsole" 
+    xmlns:pokemonConsole="using:PokemonConsole"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <!--<StackPanel>
-        <Button x:Name="HomeBtn"
-                Content="Start Over!"
-                Height="50"
-                Width="200"
-                FontSize="30"
-                Foreground="Black"
-                Background="LightGray"
-                HorizontalAlignment="Right"
-                VerticalAlignment="Bottom"
-                Margin="20, 640, 30, 0"
-                Click="HomeBtn_OnClickBtn_OnClick"/>
-    </StackPanel>-->
 
     <Grid>
         <Grid.Background>
@@ -31,7 +19,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:Encounter">
                         <StackPanel Orientation="Vertical">
-                            <TextBlock Text="{x:Bind ActivePokemon.Name}"
+                            <TextBlock Text="{x:Bind BattleType}"
                                        FontSize="70"
                                        FontWeight="Bold"
                                        TextAlignment="Center"
