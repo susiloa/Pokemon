@@ -19,7 +19,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:Encounter">
                         <StackPanel Orientation="Vertical">
-                            <TextBlock 
+                            <TextBlock Text="{Binding BattleType}"
                                        FontSize="70"
                                        FontWeight="Bold"
                                        TextAlignment="Center"
