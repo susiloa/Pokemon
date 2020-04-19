@@ -32,6 +32,8 @@ namespace Pokemon
             this.Frame.Navigate(typeof(BattlePage), null);
         }
 
+        //just to test 
+
 
     }
 }
