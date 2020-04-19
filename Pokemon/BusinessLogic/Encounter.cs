@@ -11,6 +11,7 @@ namespace Pokemon
     /* An abstract class that keeps track of the status of the pokemon (wild or traniner) */
     public abstract class Encounter
     {
+        public String BattleType { get; set; }
         public Pokemon ActivePokemon { get; set; }
         protected string _reward;
 
