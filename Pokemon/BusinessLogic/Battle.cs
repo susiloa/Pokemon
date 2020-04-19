@@ -5,8 +5,8 @@ namespace Pokemon
     public class Battle
     {
 
-        private Pokemon userPokemon { get;}
-        private Encounter encounter { get;}
+        public Pokemon userPokemon { get;}
+        public Encounter encounter { get;}
         public String BattleMessage { get; set; }
 
         private bool isPlayerTurn;

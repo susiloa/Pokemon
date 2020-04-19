@@ -22,9 +22,38 @@ namespace Pokemon
     /// </summary>
     public sealed partial class BattlePage : Page
     {
+        private Battle battle;
+        private List<Pokemon> pokemons = Pokemon.GetPokemons();
         public BattlePage()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Pokemon pokemon = e.Parameter as Pokemon;
+            int ent = new Random().Next(1, 3);
+            Encounter encounter;
+            if (ent == 1)
+            {
+                int enemySelected = new Random().Next(pokemons.Count);
+                encounter = new WildEncounter(pokemons[enemySelected], "100 EXP");
+                Console.WriteLine("You have encountered a wild " + pokemons[enemySelected]);
+            }
+            else
+            {
+                List<Pokemon> enemyPokemon = new List<Pokemon>();
+                while (enemyPokemon.Count < 2)
+                {
+                    int selected = new Random().Next(pokemons.Count);
+                    enemyPokemon.Add(pokemons[selected]);
+                    pokemons.RemoveAt(selected);
+                }
+                encounter = new TrainerEncounter(enemyPokemon, "600 EXP and $56");
+                Console.WriteLine("You have encountered Trainer Alex");
+            }
+
+            battle = new Battle(pokemon, encounter);
         }
 
         private void Move1_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
@@ -39,20 +68,21 @@ namespace Pokemon
 
         private void Move3_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            
+
+        }
 
         private void HomeBtn_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage), null);
         }
 
-        PlayerPokemonImg.Source = new BitmapImage(new Uri(uriString: $"ms-appx:///Assets/{*** PLAYER POKEMON NAME FROM JSON FILE***}.png", UriKind.RelativeOrAbsolute));
-        EnemyPokemonImg.Source = new BitmapImage(new Uri(uriString: $"ms-appx:///Assets/{***ENEMY POKEMON NAME FROM JSON FILE***}.png", UriKind.RelativeOrAbsolute));
-        PlayerPokemonHealth.Text = ***PLAYERS POKEMON HEALTH FROM JSON FILE***;
-        EnemyPokemonHealth.Text = ***ENEMY POKEMON HEALTH FROM JSON FILE***;
-        Move1.Text = ***THE FIRST MOVE FROM THE JSON FILE***;
-        Move2.Text = ***THE SECOND MOVE FROM THE JSON FILE***;
-        Move3.Text = ***THE THIRD MOVE FROM THE JSON FILE***;
+        PlayerPokemonImg.Source = battle.userPokemon.Image.Source;
+        EnemyPokemonImg.Source = battle.encounter.ActivePokemon.Image.Source;
+        PlayerPokemonHealth.Text = battle.userPokemon.Health.ToString();
+        EnemyPokemonHealth.Text = battle.encounter.ActivePokemon.Health.ToString();
+        Move1.Content = battle.userPokemon.Moves[0];
+        Move2.Content = battle.userPokemon.Moves[1];
+        Move3.Content = battle.userPokemon.Moves[2];
 
 
 
