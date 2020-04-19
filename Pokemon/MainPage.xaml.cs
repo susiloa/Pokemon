@@ -17,9 +17,8 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Pokemon
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+    //Sofia Avancena
+    //MainPage.xaml.cs just has a button event to go to SetUpPage.xaml
     public sealed partial class MainPage : Page
     {
         public MainPage()

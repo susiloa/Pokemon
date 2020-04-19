@@ -17,9 +17,8 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Pokemon
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+    //Angela Susilo
+    //SetUpPage.xaml.cs passes the chosen Pokémon with its image to BattlePage.xaml
     public sealed partial class SetUpPage : Page
     {
         private List<Pokemon> pokemons;
@@ -40,9 +39,5 @@ namespace Pokemon
             //pokemonImage.Source = ((Pokemon) PokemonCombo.SelectedItem).Image.Source;
             pokemonImage.Source = ((Pokemon) e.AddedItems[0]).Image.Source;
         }
-
-        //just to test 
-
-
     }
 }

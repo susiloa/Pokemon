@@ -10,9 +10,12 @@
     xmlns:pokemonConsole="using:Pokemon"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <!-- Author: Oliver Drenth. Heavily Edited by Angela Susilo. Partially edited by Sofia Avancena -->
+
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/forestbackground.jpg" Stretch="Fill"/>
+            <ImageBrush ImageSource="/Assets/forestbackground.jpg" 
+                        Stretch="Fill"/>
         </Grid.Background>
         <StackPanel>
             <StackPanel.Background>
@@ -20,30 +23,112 @@
             </StackPanel.Background>
 
         </StackPanel>
-        <!--<Rectangle Fill="LightBlue" HorizontalAlignment="Right" Height="100" Margin="0,85,1178,0" Stroke="Black" VerticalAlignment="Top" Width="312"/>
-        <Rectangle Fill="LightCoral" Height="100" Margin="0,637,47,0" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Right" Width="312"/>-->
+
+        <StackPanel Margin="15,50,0,0" 
+                    HorizontalAlignment="Left">
+            <TextBlock x:Name="PlayerPokemon" 
+                       FontWeight="Bold"
+                       HorizontalAlignment="Left" 
+                       FontSize="36" Text="Player" 
+                       VerticalAlignment="Top"/>
+            <TextBlock x:Name="PlayerPokemonHealth" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Left" 
+                       FontSize="36" 
+                       Text="HP:100/100" 
+                       VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <TextBlock x:Name="EnemyPokemon" 
+                   FontWeight="Bold" 
+                   FontSize="36" 
+                   Text="Opponent" 
+                   Margin="100, 200"
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Bottom" />
+        <TextBlock x:Name="EnemyPokemonHealth" 
+                   FontWeight="Bold" 
+                   FontSize="36" 
+                   Text="HP:100/100" 
+                   Margin="100, 160"
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Bottom"/>
+
+        <Image x:Name="PlayerPokemonImg" 
+               HorizontalAlignment="Left" 
+               Width="300" Height="300"  
+               Margin="38,170,0,0" 
+               VerticalAlignment="Top" />
+
+        <Image x:Name="EnemyPokemonImg"
+               HorizontalAlignment="Right" 
+               Width="300" Height="300" 
+               Margin="0,170,68,0" VerticalAlignment="Top"  />
 
 
-        <TextBlock x:Name="EnemyPokemonHealth" FontWeight="Bold" Margin="0,0,100,300" FontSize="36" Text="HP:100/100" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-        <TextBlock x:Name="PlayerPokemonHealth" FontWeight="Bold" HorizontalAlignment="Left" Margin="20,100,0,0" FontSize="36" Text="HP:100/100" VerticalAlignment="Top"/>
+        <Button x:Name="Move1" 
+                FontWeight="Bold" 
+                Opacity=".8" 
+                Background="DodgerBlue" 
+                Content="Move 1" 
+                FontSize="24" 
+                Height="100" Width="300" 
+                Margin="0,0,0,0" 
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Left" 
+                Click="Move1_OnClickBtn_OnClick"/>
 
+        <Button x:Name="Move2" 
+                FontWeight="Bold" 
+                Opacity=".8" 
+                Background="DodgerBlue" 
+                Content="Move 2" 
+                FontSize="24" 
+                Height="100" Width="300" 
+                HorizontalAlignment="Center" 
+                Margin="0,0,0,0" 
+                VerticalAlignment="Bottom" 
+                Click="Move2_OnClickBtn_OnClick"/>
 
-        <Image x:Name="PlayerPokemonImg" HorizontalAlignment="Left" Width="300" Height="300"  Margin="50,0,0,150" VerticalAlignment="Center" />
-        <Image x:Name="EnemyPokemonImg" HorizontalAlignment="Right" Width="300" Height="300" Margin="0,50,50,0" VerticalAlignment="Top"  />
+        <Button x:Name="Move3" 
+                FontWeight="Bold" 
+                Opacity=".8" 
+                Background="DodgerBlue" 
+                Content="Move 3" 
+                FontSize="24" 
+                Height="100"  Width="300"
+                HorizontalAlignment="Right" 
+                Margin="0,0,0,0" 
+                VerticalAlignment="Bottom" 
+                Click="Move3_OnClickBtn_OnClick"/>
 
+        <Button x:Name="HomeBtn" 
+                Content="Home" 
+                Margin="0,0,0,0" 
+                VerticalAlignment="Top" 
+                Height="45" Width="75" 
+                HorizontalAlignment="Left" 
+                Click="HomeBtn_OnClick"/>
 
-        <Button x:Name="Move1" FontWeight="Bold" Opacity=".8" Background="DodgerBlue" Content="Mystic Fire" FontSize="24" Height="100" Width="300" Margin="0,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="Move1_OnClickBtn_OnClick"/>
+        <Button x:Name="CaptureBtn" 
+                Content="Capture" 
+                Margin="0,0,0,0" 
+                VerticalAlignment="Top" 
+                Height="50" Width="100" 
+                HorizontalAlignment="Center" 
+                FontSize="16" 
+                Background="DodgerBlue" 
+                Click="CaptureBtn_Click"/>
 
-        <Button x:Name="Move2" FontWeight="Bold" Opacity=".8" Background="DodgerBlue" Content="Move2" FontSize="24" Height="100" Width="300" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" Click="Move2_OnClickBtn_OnClick"/>
-
-        <Button x:Name="Move3" FontWeight="Bold" Opacity=".8" Background="DodgerBlue" Content="Move3" FontSize="24" Height="100" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="300" Click="Move3_OnClickBtn_OnClick"/>
-
-        <Button x:Name="HomeBtn" Content="Home" Margin="0,0,0,0" VerticalAlignment="Top" Height="45" Width="75" HorizontalAlignment="Left"/>
-
-        <Button x:Name="CaptureBtn" Content="Capture" Margin="0,0,0,0" VerticalAlignment="Top" Height="50" Width="100" HorizontalAlignment="Center" FontSize="16" Background="DodgerBlue" Click="CaptureBtn_Click"/>
-
-        <ScrollViewer Height="151" Width="302" >
-        <TextBlock x:Name="BattleLog" HorizontalAlignment="Center"  Text="DIALOG" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontSize="14" FontWeight="ExtraBold" />
+        <ScrollViewer Margin="510,119,526,179" >
+            <TextBlock x:Name="BattleLog" 
+                       HorizontalAlignment="Left"  
+                       Text="DIALOG" 
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Top" 
+                       Foreground="White" 
+                       FontSize="14" 
+                       FontWeight="ExtraBold" />
         </ScrollViewer>
     </Grid>
 </Page>

@@ -20,9 +20,10 @@ using Windows.UI.Popups;
 
 namespace Pokemon
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+    //Author: Oliver Drenth. Edited by: Angela Susilo and Sofia Avancena
+    /*BattlePage.xaml.cs receives the chosen Pokémon with its image,
+     randomly selects the opponent/s */
+    
     public sealed partial class BattlePage : Page
     {
         private Battle battle;
@@ -57,7 +58,6 @@ namespace Pokemon
                 Console.WriteLine("You have encountered Trainer Alex");
             }
 
-            
 
             battle = new Battle(pokemon, encounter);
 
@@ -70,6 +70,7 @@ namespace Pokemon
             Move3.Content = battle.userPokemon.Moves[2];
 
             battle.BattleStart();
+
         }
 
         private void Move1_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
@@ -105,17 +106,7 @@ namespace Pokemon
             }
         }
 
-        private void HomeBtn_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
-        {
-            LogBattle();
-            this.Frame.Navigate(typeof(MainPage), null);
-            if (battle.GameEnd)
-            {
-                MessageDialog md = new MessageDialog(battle.encounter.GetReward());
-                md.ShowAsync();
-            }
-        }
-
+        //Supposed to only show up for Wild Encounter
         private void CaptureBtn_Click(object sender, RoutedEventArgs e)
         {
             LogBattle();
@@ -148,11 +139,21 @@ namespace Pokemon
                 battle.BattleMessage.RemoveAt(0);
             }
 
+            PlayerPokemon.Text = "Player: " + battle.userPokemon.Name;
             PlayerPokemonHealth.Text = battle.userPokemon.Health.ToString();
+            EnemyPokemon.Text = "Opponent: " + battle.encounter.ActivePokemon.Name;
             EnemyPokemonHealth.Text = battle.encounter.ActivePokemon.Health.ToString();
         }
-        //commit tesr
 
-
+        private void HomeBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            LogBattle();
+            this.Frame.Navigate(typeof(MainPage), null);
+            if (battle.GameEnd)
+            {
+                MessageDialog md = new MessageDialog("Starting Over");
+                md.ShowAsync();
+            }
+        }
     }
 }

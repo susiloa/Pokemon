@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Sofia Avancena
+/* An inherited class from Encounter.cs for Pokémon that is found in the wild.
+ It will guarantee that only 1 Pokémon is involved
+ There is a possibility to capture the Pokémon. */
 
 namespace Pokemon
 {
-    /* An inherited class from Encounter for Pokémon that is found in the wild.
-     It will guarantee that only 1 Pokémon is involved
-     There is a possibility to capture the Pokémon. */
     public class WildEncounter : Encounter
     {
         private bool _isCaptured = false;
@@ -46,7 +46,6 @@ namespace Pokemon
 
             else return false;
         }
-
 
         public override string GetReward()
         {

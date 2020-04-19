@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
+//Angela Susilo
+/* The main class for battle progression, including the setup phase.
+ It keeps track of the Pokémon involved in battle, the round turn, 
+ and checking the game phase status (setup phase, battle phase, game over phase) */
+
 namespace Pokemon
 {
     public class Battle

@@ -8,6 +8,10 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 using System.Threading.Tasks;
 
+//Author: Oliver Drenth. Heavily edited by Angela Susilo. Partially edited by Sofia Avancena
+/* Pokemon.cs acquires the json data of each Pokémon from PokemonTable.txt.
+ There are 10 Pokémon to choose from. */
+
 namespace Pokemon
 {
     public class Pokemon
@@ -81,4 +85,3 @@ namespace Pokemon
 
     }
 }
-//test

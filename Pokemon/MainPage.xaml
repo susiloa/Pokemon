@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
     xmlns:xamlAnimatedGif="using:XamlAnimatedGif">
+
+    <!-- Sofia Avancena -->
+    <!-- MainPage.xaml is just a simple start page -->
+
     <StackPanel>
         <StackPanel.Background>
             <ImageBrush ImageSource="/Assets/setup1.jpg"/>
@@ -18,11 +22,11 @@
                Height="549" Width="980"
                RenderTransformOrigin="0.993,5.428"/>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Hello there! Welcome to the world of POKEMON!&#xA;My name is Ash and this is Pikachu.&#xA;Come on! Let's go to Professor Oak's laboratoy!"
+            <TextBlock Text="Hello there! Welcome to the world of Pokémon!&#xA;My name is Ash and this is Pikachu.&#xA;Come on! Let's go to Professor Oak's laboratoy!"
                        FontSize="30"
                        FontWeight="ExtraBold"
-                       Foreground="White"
-                       Margin="110, 10, 5, 10"
+                       Foreground="Black"
+                       Margin="120, 10, 5, 10"
                        HorizontalAlignment="Center"/>
             <Button x:Name="LetsGoBtn"
                     Content="Let's Go!"
@@ -32,9 +36,8 @@
                     Foreground="Black"
                     Background="LightGray"
                     VerticalAlignment="Bottom"
-                    Margin="80, 10, 0, 30"
+                    Margin="100, 10, 0, 30"
                     Click="LetsGoBtn_OnClick"/>
         </StackPanel>
-
     </StackPanel>
 </Page>

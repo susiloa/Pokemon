@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Sofia Avanccena
+/* An Inherited class from Encounter.cs for Pokémon that is owned by a trainer.
+ Trainer may have more than 1 Pokémon, and capturing is not allowed. */
 
 namespace Pokemon
 {
-    /* An Inherited class from Encounter for Pokemon that is owned by a trainer.
-     Trainer may have more than 1 pokemon, and capturing is not allowed. */
-    class TrainerEncounter: Encounter
+    class TrainerEncounter : Encounter
     {
         //Properties
         public List<Pokemon> _reservePokemon { get; set; }

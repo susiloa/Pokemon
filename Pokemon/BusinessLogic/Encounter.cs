@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Sofia Avancena
+/* An abstract class that keeps track of the status of the type of battle (wild or traniner) */
 
 namespace Pokemon
 {
-    /* An abstract class that keeps track of the status of the pokemon (wild or traniner) */
     public abstract class Encounter
     {
         public String BattleType { get; set; }
@@ -20,13 +20,13 @@ namespace Pokemon
             get { return _reward; }
         }
 
-        //	Check if the battle had lost, and what would happen if so
+        //Check if the battle had lost, and what would happen if so
         public virtual bool BattleLost()
         {
             return false;
         }
 
-        // Send a string message of the reward that is received
+        // Send a string message of the reward that is received, gets overriden
         public virtual string GetReward()
         {
             return "Congratulations you won 100 EXP!";

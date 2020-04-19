@@ -4,6 +4,10 @@ using System.Text;
 using Newtonsoft.Json;
 using System.IO;
 
+//Author: Oliver Drenth. Properties initialized by Sofia Avancena. Edited by Angela Susilo
+/*Move.cs uses json data from MoveTable.txt for each Move (skill)
+ and their associated type, accuracy and power that a Pokémon can has.*/
+
 namespace Pokemon
 {
     public class Move

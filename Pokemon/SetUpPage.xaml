@@ -8,13 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <!-- Angela Susilo -->
+    <!-- SetUpPage.xaml is where the player chooses a Pokémon to battle with -->
+
     <StackPanel Orientation="Horizontal" >
         <StackPanel.Background>
             <ImageBrush ImageSource="/Assets/setup1.jpg"/>
         </StackPanel.Background>
 
         <StackPanel Orientation="Horizontal" Height="81" >
-            <ComboBox  x:Name="PokemonCombo" Header="Pick a Pokemon" PlaceholderText="click here for pokemon" Width="400" FontSize="24" Margin="100,0,100,0" SelectionChanged="PokemonCombo_SelectionChanged" ItemsSource="{x:Bind pokemons}">
+            <ComboBox  x:Name="PokemonCombo" PlaceholderText="Choose your Pokémon " Width="400" FontSize="24" Margin="100,0,100,0" SelectionChanged="PokemonCombo_SelectionChanged" ItemsSource="{x:Bind pokemons}">
                 <x:String></x:String>
                 <x:String>Green</x:String>
                 <x:String>Red</x:String>
@@ -32,7 +35,6 @@
                 Click="LetsBattleBtn_OnClick"
                 />
         <Image x:Name="pokemonImage" Width="300" Margin="10, 0, 20, 10"/>
-
 
     </StackPanel>
 </Page>
