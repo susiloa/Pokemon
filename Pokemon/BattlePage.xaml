@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
+    <!--<StackPanel>
         <Button x:Name="HomeBtn"
                 Content="Start Over!"
                 Height="50"
@@ -20,5 +20,13 @@
                 VerticalAlignment="Bottom"
                 Margin="20, 640, 30, 0"
                 Click="HomeBtn_OnClickBtn_OnClick"/>
-    </StackPanel>
+    </StackPanel>-->
+
+    <Grid>
+        <TextBlock x:Name="EnemyPokemonHealth" Margin="1003,514,-903,-414" FontSize="50" Text="HP:100/100" TextWrapping="Wrap"/>
+        <TextBlock x:Name="PlayerPokemonHealth" HorizontalAlignment="Left" Margin="50,242,0,0" FontSize="50" Text="HP:100/100" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Image x:Name="PlayerPokemonImg" HorizontalAlignment="Left" Height="450" Margin="50,322,0,0" VerticalAlignment="Top" Width="450"/>
+        <Image x:Name="EnemyPokemonImg" HorizontalAlignment="Left" Height="450" Margin="1003,50,0,0" VerticalAlignment="Top" Width="450"/>
+
+    </Grid>
 </Page>
