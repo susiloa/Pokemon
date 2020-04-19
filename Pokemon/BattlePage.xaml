@@ -30,5 +30,6 @@
         <Button x:Name="Move1" Background="White" Content="Mystic Fire" FontSize="40" Height="147" Width="470" Margin="10,848,0,0" VerticalAlignment="Top"/>
         <Button x:Name="Move2" Background="White" Content="Move2" FontSize="40" Height="152" Width="500" HorizontalAlignment="Right" Margin="0,848,515,0" VerticalAlignment="Top"/>
         <Button x:Name="Move3" Background="White" Content="Move3" FontSize="40" Height="147" Margin="990,848,0,0" VerticalAlignment="Top" Width="500"/>
+        <Button x:Name="HomeBtn" Content="Home" Margin="0,0,1425,0" VerticalAlignment="Top" Height="45" Width="75" HorizontalAlignment="Right"/>
     </Grid>
 </Page>
