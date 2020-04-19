@@ -24,3 +24,4 @@ public class pokemon
         isdead = false;
         imgsrc = name + @".png";
     }
+      //
