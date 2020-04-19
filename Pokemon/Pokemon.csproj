@@ -143,7 +143,14 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Articuno.png" />
     <Content Include="Assets\AshKetchum.gif" />
+    <Content Include="Assets\Blastoise.png" />
+    <Content Include="Assets\Charizard.png" />
+    <Content Include="Assets\Chectnaught.png" />
+    <Content Include="Assets\Delphox.png" />
+    <Content Include="Assets\Eiscue.png" />
+    <Content Include="Assets\Pikachu.png" />
     <Content Include="Assets\setup1.jpg" />
     <Content Include="Assets\setup2.jpg" />
     <Content Include="Properties\Default.rd.xml" />
@@ -186,6 +193,10 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Raichu.webp" />
+    <None Include="Assets\Venusaur.webp" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

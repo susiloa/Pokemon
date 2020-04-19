@@ -1,0 +1,302 @@
+[  
+{
+    "Name": "Charizard",
+    "Type": "fire",
+    "Health": 80,
+    "Attack": 82,
+    "Defense": 83,
+    "Speed": 80,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Dragon Claw",
+        "Type": "fire",
+        "Acc": 100,
+        "Power": 80
+      },
+      {
+        "Name": "Fire Fang",
+        "Type": "fire",
+        "Acc": 80,
+        "Power": 80
+      },
+      {
+        "Name": "Ice Beam",
+        "Type": "ice",
+        "Acc": 100,
+        "Power": 80
+      }
+    ],
+    "ImgSrc": "Charizard.png"
+  },  
+{
+    "Name": "Delphox",
+    "Type": "fire",
+    "Health": 75,
+    "Attack": 69,
+    "Defense": 72,
+    "Speed": 104,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Mystical Fire",
+        "Type": "fire",
+        "Acc": 30,
+        "Power": 300
+      },
+      {
+        "Name": "Fire Spin",
+        "Type": "fire",
+        "Acc": 100,
+        "Power": 60
+      },
+      {
+        "Name": "Thunder",
+        "Type": "electric",
+        "Acc": 70,
+        "Power": 110
+      }
+    ],
+    "ImgSrc": "Delphox.png"
+  },
+  {
+    "Name": "Blastoise",
+    "Type": "water",
+    "Health": 79,
+    "Attack": 83,
+    "Defense": 100,
+    "Speed": 78,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Water Gun",
+        "Type": "water",
+        "Acc": 100,
+        "Power": 40
+      },
+      {
+        "Name": "Hydro Pump",
+        "Type": "water",
+        "Acc": 60,
+        "Power": 120
+      },
+      {
+        "Name": "Thunder",
+        "Type": "electric",
+        "Acc": 70,
+        "Power": 110
+      }
+    ],
+    "ImgSrc": "Blastoise.png"
+  },
+  {
+    "Name": "Greninja",
+    "Type": "water",
+    "Health": 72,
+    "Attack": 98,
+    "Defense": 67,
+    "Speed": 122,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Water Shuriken",
+        "Type": "water",
+        "Acc": 100,
+        "Power": 90
+      },
+      {
+        "Name": "Bubble",
+        "Type": "water",
+        "Acc": 80,
+        "Power": 80
+      },
+      {
+        "Name": "Thunderbolt",
+        "Type": "electric",
+        "Acc": 100,
+        "Power": 70
+      }
+    ],
+    "ImgSrc": "Greninja.png"
+  },
+  {
+    "Name": "Venusaur",
+    "Type": "grass",
+    "Health": 80,
+    "Attack": 82,
+    "Defense": 83,
+    "Speed": 80,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Dragon Claw",
+        "Type": "fire",
+        "Acc": 100,
+        "Power": 80
+      },
+      {
+        "Name": "Watergun",
+        "Type": "water",
+        "Acc": 100,
+        "Power": 40
+      },
+      {
+        "Name": "Thunder",
+        "Type": "electric",
+        "Acc": 70,
+        "Power": 110
+      }
+    ],
+    "ImgSrc": "Venusaur.png"
+  },
+  {
+    "Name": "Chesnaught",
+    "Type": "grass",
+    "Health": 88,
+    "Attack": 107,
+    "Defense": 122,
+    "Speed": 64,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Wood Hammer",
+        "Type": "fire",
+        "Acc": 100,
+        "Power": 80
+      },
+      {
+        "Name": "Seed Bomb",
+        "Type": "grass",
+        "Acc": 100,
+        "Power": 40
+      },
+      {
+        "Name": "Heat Wave",
+        "Type": "fire",
+        "Acc": 70,
+        "Power": 110
+      }
+    ],
+    "ImgSrc": "Chesnaught.png"
+  },
+  {
+    "Name": "Pikachu",
+    "Type": "electric",
+    "Health": 35,
+    "Attack": 55,
+    "Defense": 40,
+    "Speed": 90,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Thunder",
+        "Type": "electric",
+        "Acc": 70,
+        "Power": 110
+      },
+      {
+        "Name": "Surf",
+        "Type": "water",
+        "Acc": 100,
+        "Power": 80
+      },
+      {
+        "Name": "Thunderbolt",
+        "Type": "electric",
+        "Acc": 100,
+        "Power": 70
+      }
+    ],
+    "ImgSrc": "Pikachu.png"
+  },
+  {
+    "Name": "Raichu",
+    "Type": "electric",
+    "Health": 60,
+    "Attack": 60,
+    "Defense": 55,
+    "Speed": 110,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Thunderbolt",
+        "Type": "electric",
+        "Acc": 100,
+        "Power": 70
+      },
+      {
+        "Name": "Thunder",
+        "Type": "electric",
+        "Acc": 70,
+        "Power": 110
+      },
+      {
+        "Name": "Thunder Punch",
+        "Type": "electric",
+        "Acc": 90,
+        "Power": 90
+      }
+    ],
+    "ImgSrc": "Raichu.png"
+  },
+  {
+    "Name": "Articuno",
+    "Type": "ice",
+    "Health": 90,
+    "Attack": 85,
+    "Defense": 100,
+    "Speed": 85,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Ice Beam",
+        "Type": "ice",
+        "Acc": 100,
+        "Power": 80
+      },
+      {
+        "Name": "Blizzard",
+        "Type": "ice",
+        "Acc": 80,
+        "Power": 120
+      },
+      {
+        "Name": "Thunder",
+        "Type": "electric",
+        "Acc": 70,
+        "Power": 110
+      }
+    ],
+    "ImgSrc": "Articuno.png"
+  },
+  {
+    "Name": "Eiscue",
+    "Type": "ice",
+    "Health": 75,
+    "Attack": 80,
+    "Defense": 100,
+    "Speed": 50,
+    "IsDead": false,
+    "Moves": [
+      {
+        "Name": "Icy Wind",
+        "Type": "ice",
+        "Acc": 100,
+        "Power": 70
+      },
+      {
+        "Name": "Surf",
+        "Type": "water",
+        "Acc": 100,
+        "Power": 80
+      },
+      {
+        "Name": "Blizzard",
+        "Type": "ice",
+        "Acc": 80,
+        "Power": 100
+      }
+    ],
+    "ImgSrc": "Eiscue.png"
+  }
+]

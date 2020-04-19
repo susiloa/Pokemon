@@ -6,19 +6,11 @@ using System.Threading.Tasks;
 
 //Sofia Avancena
 
-namespace Pokemon.BusinessLogic
+namespace PokemonConsole
 {
     public class WildEncounter: Encounter
     {
-        public int Attempt;
-
-        //Properties
-        public Pokemon ActivePokemon { get; set; }
-        private string _reward;
-        public string Reward
-        {
-            get { return _reward; }
-        }
+        private bool captured = false;
 
         //Constructor
         public WildEncounter(Pokemon pokemon, string reward)
@@ -30,18 +22,21 @@ namespace Pokemon.BusinessLogic
         //Methods
         public override bool BattleLost()
         {
-            if (ActivePokemon.Health == 0) return true;
+            if (ActivePokemon.Health <= 0 || captured) return true;
             else return false;
         }
 
         public bool TryCapture()
         {
-            if (Pokemon.Health == 0)
+            if (ActivePokemon.Health > 0)
             {
                 Random randomNumber = new Random();
-                Attempt = randomNumber.Next(1, 7);
+                int Attempt = randomNumber.Next(7);
 
-                if (Attempt % 2 != 0) return true;
+                if (Attempt % 2 != 0) {
+                    captured = true;
+                    return true;
+                }
                 else return false;
             }
 
@@ -51,6 +46,8 @@ namespace Pokemon.BusinessLogic
 
         public override string GetReward() //string
         {
+            String message = "Congratulations you won " + _reward;
+            message += (captured) ? " and captured " + ActivePokemon + "!" : "!";
             return "Congratulations you won 100 EXP!";
         }
     }
