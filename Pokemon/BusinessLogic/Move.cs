@@ -1,43 +1,36 @@
-﻿using Windows.System;
+﻿using System;
 using System.Collections.Generic;
-using Windows.Storage;
+using System.Text;
+using Newtonsoft.Json;
+using System.IO;
 
-
-//Sofia Avancena
-
-namespace Pokemon.BusinessLogic
+namespace PokemonConsole
 {
-    class Move
+    public class Move
     {
-		/* Read only properties */
-		private string _moveName;
-        public string MoveName
-		{
-			get { return _moveName; }
-		}
-        private string _moveType;
-        public string MoveType
+        public String Name { get; }
+        public String Type { get; }
+        public int Acc { get; }
+        public int Power { get; }
+
+        public Move(String name, String type, int power, int acc)
         {
-            get { return _moveType; }
-        }
-        private int _moveAccuracy;
-        public int MoveAccuracy
-        {
-            get { return _moveAccuracy; }
-        }
-        private int _movePower;
-        public int MovePower
-        {
-            get { return _movePower; }
+            Name = name;
+            Type = type;
+            Acc = acc;
+            Power = power;
         }
 
-        public Move(string name, string type, int accuracy, int power)
+        public static List<Move> GetMoves()
         {
-            this._moveName = name;
-            this._moveType = type;
-            this._moveAccuracy = accuracy;
-            this._movePower = power;
+            String moveData = File.ReadAllText(@"./MoveTable.txt");
+            List<Move> moveList = JsonConvert.DeserializeObject<List<Move>>(moveData);
+            return moveList;
         }
 
+        public override string ToString()
+        {
+            return Name + " (" + Type + ")";
+        }
     }
 }

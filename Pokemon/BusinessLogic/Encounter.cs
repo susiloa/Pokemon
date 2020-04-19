@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 //Sofia Avancena
 
-namespace Pokemon.BusinessLogic
+namespace PokemonConsole
 {
     /* An abstract class that keeps track of the status of the pokemon (wild or traniner) */
     public abstract class Encounter
     {
         public Pokemon ActivePokemon { get; set; }
-        private string _reward;
+        protected string _reward;
 
         public string Reward
         {
