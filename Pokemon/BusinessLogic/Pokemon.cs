@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Net.Mime;
 using Newtonsoft.Json;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
-namespace PokemonConsole
+namespace Pokemon
 {
     public class Pokemon
     {
+        private String _imgSrc;
         public String Name { get; }
         public string Type { get; }
         public double Health { get; set; }
@@ -16,7 +20,16 @@ namespace PokemonConsole
         public int Speed { get; }
         public Boolean IsDead { get; set; }
         public List<Move> Moves { get; }
-        public String ImgSrc { get; }
+
+        public String ImgSrc
+        {
+            set
+            {
+                _imgSrc = value;
+                Image.Source = new BitmapImage(new Uri($"ms-appx:///Assets/{_imgSrc}", UriKind.RelativeOrAbsolute));
+            }
+        }
+        public Image Image { get; set; }
 
         public static List<Pokemon> GetPokemons()
         {

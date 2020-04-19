@@ -22,14 +22,23 @@ namespace Pokemon
     /// </summary>
     public sealed partial class SetUpPage : Page
     {
+        private List<Pokemon> pokemons;
         public SetUpPage()
         {
             this.InitializeComponent();
+            pokemons = Pokemon.GetPokemons();
         }
 
         private void LetsBattleBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BattlePage), null);
+            Console.WriteLine(PokemonCombo.SelectedItem);
+            this.Frame.Navigate(typeof(BattlePage), PokemonCombo.SelectedItem);
+        }
+
+        private void PokemonCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //pokemonImage.Source = ((Pokemon) PokemonCombo.SelectedItem).Image.Source;
+            pokemonImage.Source = ((Pokemon) e.AddedItems[0]).Image.Source;
         }
 
         //just to test 

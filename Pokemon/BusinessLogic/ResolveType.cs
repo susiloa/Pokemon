@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 
-namespace PokemonConsole
+namespace Pokemon
 {
     public static class ResolveType
     {

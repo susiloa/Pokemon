@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 //Sofia Avancena
 
-namespace PokemonConsole
+namespace Pokemon
 {
     /* An abstract class that keeps track of the status of the pokemon (wild or traniner) */
     public abstract class Encounter

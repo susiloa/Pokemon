@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 //Sofia Avancena
 
-namespace PokemonConsole
+namespace Pokemon
 {
     public class WildEncounter: Encounter
     {

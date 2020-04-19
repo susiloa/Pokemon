@@ -29,18 +29,17 @@ namespace Pokemon
 
         private void Move1_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            ***Run the damage formula on the enemy***
+            
         }
 
         private void Move2_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            ***Run the damage formula on the enemy***
+           
         }
 
         private void Move3_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            ***Run the damage formula on the enemy***
-        }
+            
 
         private void HomeBtn_OnClickBtn_OnClick(object sender, RoutedEventArgs e)
         {

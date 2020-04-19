@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 //Sofia Avanccena
 
-namespace PokemonConsole
+namespace Pokemon
 {
     /* An Inherited class from Encounter for Pokemon that is owned by a trainer.
      Trainer may have more than 1 pokemon, and capturing is not allowed.

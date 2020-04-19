@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PokemonConsole
+namespace Pokemon
 {
     public class Battle
     {
@@ -63,7 +63,7 @@ namespace PokemonConsole
                         WildEncounter enc = (WildEncounter)encounter;
                         if(enc.TryCapture())
                         {
-                            BattleMessage += "Succesfully captured " + enc.ActivePokemon + "!\n";
+                            BattleMessage += "Successfully captured " + enc.ActivePokemon + "!\n";
                             selection = -1;
                             EndOfTurn();
                         }
