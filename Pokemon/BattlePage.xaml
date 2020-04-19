@@ -22,14 +22,17 @@
                 Click="HomeBtn_OnClickBtn_OnClick"/>
     </StackPanel>-->
 
-    <Grid Background="LightBlue">
-        <TextBlock x:Name="EnemyPokemonHealth" Margin="1155,654,0,122" FontSize="50" Text="HP:100/100" TextWrapping="Wrap" HorizontalAlignment="Left" Width="637"/>
-        <TextBlock x:Name="PlayerPokemonHealth" HorizontalAlignment="Right" Margin="0,102,1200,0" FontSize="50" Text="HP:100/100" TextWrapping="Wrap" VerticalAlignment="Top"/>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/forestbackground.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <TextBlock x:Name="EnemyPokemonHealth" FontWeight="Bold" Margin="1155,654,0,122" FontSize="50" Text="HP:100/100" TextWrapping="Wrap" HorizontalAlignment="Left" Width="637"/>
+        <TextBlock x:Name="PlayerPokemonHealth" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,102,1200,0" FontSize="50" Text="HP:100/100" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Image x:Name="PlayerPokemonImg" HorizontalAlignment="Left" Height="596" Margin="44,0,0,0" VerticalAlignment="Center" Width="598"/>
         <Image x:Name="EnemyPokemonImg" HorizontalAlignment="Left" Height="599" Margin="856,50,0,0" VerticalAlignment="Top" Width="597"/>
-        <Button x:Name="Move1" Background="White" Content="Mystic Fire" FontSize="40" Height="147" Width="470" Margin="10,848,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Move2" Background="White" Content="Move2" FontSize="40" Height="152" Width="500" HorizontalAlignment="Right" Margin="0,848,515,0" VerticalAlignment="Top"/>
-        <Button x:Name="Move3" Background="White" Content="Move3" FontSize="40" Height="147" Margin="990,848,0,0" VerticalAlignment="Top" Width="500"/>
+        <Button x:Name="Move1" FontWeight="Bold" Opacity=".8" Background="White" Content="Mystic Fire" FontSize="40" Height="147" Width="470" Margin="10,848,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Move2" FontWeight="Bold" Opacity=".8" Background="White" Content="Move2" FontSize="40" Height="152" Width="500" HorizontalAlignment="Right" Margin="0,848,515,0" VerticalAlignment="Top"/>
+        <Button x:Name="Move3" FontWeight="Bold" Opacity=".8" Background="White" Content="Move3" FontSize="40" Height="147" Margin="990,848,0,0" VerticalAlignment="Top" Width="500"/>
         <Button x:Name="HomeBtn" Content="Home" Margin="0,0,1425,0" VerticalAlignment="Top" Height="45" Width="75" HorizontalAlignment="Right"/>
     </Grid>
 </Page>
