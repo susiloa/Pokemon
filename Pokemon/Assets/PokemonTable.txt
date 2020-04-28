@@ -9,21 +9,21 @@
     "IsDead": false,
     "Moves": [
       {
-        "Name": "Dragon Claw",
+        "Name": "Fire Spin",
         "Type": "fire",
-        "Acc": 100,
+        "Accuracy": 85,
         "Power": 80
       },
       {
         "Name": "Fire Fang",
         "Type": "fire",
-        "Acc": 80,
+        "Accuracy": 95,
         "Power": 80
       },
       {
-        "Name": "Ice Beam",
-        "Type": "ice",
-        "Acc": 100,
+        "Name": "Heat Wave",
+        "Type": "fire",
+        "Accuracy": 95,
         "Power": 80
       }
     ],
@@ -41,20 +41,20 @@
       {
         "Name": "Mystical Fire",
         "Type": "fire",
-        "Acc": 30,
-        "Power": 300
+        "Accuracy": 95,
+        "Power": 80
       },
       {
         "Name": "Fire Spin",
         "Type": "fire",
-        "Acc": 100,
-        "Power": 60
+        "Accuracy": 95,
+        "Power": 80
       },
       {
-        "Name": "Thunder",
-        "Type": "electric",
-        "Acc": 70,
-        "Power": 110
+        "Name": "Flame Thrower",
+        "Type": "fire",
+        "Accuracy": 95,
+        "Power": 80
       }
     ],
     "ImgSrc": "Delphox.png"
@@ -68,23 +68,23 @@
     "Speed": 78,
     "IsDead": false,
     "Moves": [
-      {
+    {
         "Name": "Water Gun",
         "Type": "water",
-        "Acc": 100,
+        "Accuracy": 100,
         "Power": 40
       },
-      {
+    {
+        "Name": "Aqua Tail ",
+        "Type": "water",
+        "Accuracy": 90,
+        "Power": 35
+      },
+    {
         "Name": "Hydro Pump",
         "Type": "water",
-        "Acc": 60,
-        "Power": 120
-      },
-      {
-        "Name": "Thunder",
-        "Type": "electric",
-        "Acc": 70,
-        "Power": 110
+        "Accuracy": 80,
+        "Power": 90
       }
     ],
     "ImgSrc": "Blastoise.png"
@@ -98,23 +98,23 @@
     "Speed": 122,
     "IsDead": false,
     "Moves": [
-      {
-        "Name": "Water Shuriken",
+    {
+        "Name": "Water Shuriken ",
         "Type": "water",
-        "Acc": 100,
+        "Accuracy": 100 ,
+        "Power": 40
+      },
+    {
+        "Name": "Bubble ",
+        "Type": "water",
+        "Accuracy": 100 ,
         "Power": 90
       },
-      {
-        "Name": "Bubble",
+    {
+        "Name": "Hydro Pump ",
         "Type": "water",
-        "Acc": 80,
-        "Power": 80
-      },
-      {
-        "Name": "Thunderbolt",
-        "Type": "electric",
-        "Acc": 100,
-        "Power": 70
+        "Accuracy": 80 ,
+        "Power": 110
       }
     ],
     "ImgSrc": "Greninja.png"
@@ -129,22 +129,22 @@
     "IsDead": false,
     "Moves": [
       {
-        "Name": "Dragon Claw",
-        "Type": "fire",
-        "Acc": 100,
-        "Power": 80
+        "Name": "Petal Blizzard",
+        "Type": "grass",
+        "Accuracy": 100,
+        "Power": 90
       },
       {
-        "Name": "Watergun",
-        "Type": "water",
-        "Acc": 100,
-        "Power": 40
+        "Name": "Solar Beam",
+        "Type": "grass",
+        "Accuracy": 100,
+        "Power": 120
       },
       {
-        "Name": "Thunder",
-        "Type": "electric",
-        "Acc": 70,
-        "Power": 110
+        "Name": "Vine Whip",
+        "Type": "grass",
+        "Accuracy": 100,
+        "Power": 45
       }
     ],
     "ImgSrc": "Venusaur.png"
@@ -160,21 +160,21 @@
     "Moves": [
       {
         "Name": "Wood Hammer",
-        "Type": "fire",
-        "Acc": 100,
-        "Power": 80
+        "Type": "grass",
+        "Accuracy": 100,
+        "Power": 120
       },
       {
         "Name": "Seed Bomb",
         "Type": "grass",
-        "Acc": 100,
-        "Power": 40
+        "Accuracy": 100,
+        "Power": 80
       },
       {
-        "Name": "Heat Wave",
-        "Type": "fire",
-        "Acc": 70,
-        "Power": 110
+        "Name": "Wine Whip",
+        "Type": "grass",
+        "Accuracy": 100,
+        "Power": 45
       }
     ],
     "ImgSrc": "Chesnaught.png"
@@ -189,22 +189,22 @@
     "IsDead": false,
     "Moves": [
       {
-        "Name": "Thunder",
+        "Name": "Thunder Bolt",
         "Type": "electric",
-        "Acc": 70,
-        "Power": 110
+        "Accuracy": 100,
+        "Power": 90
       },
       {
-        "Name": "Surf",
-        "Type": "water",
-        "Acc": 100,
-        "Power": 80
+        "Name": "Thunder Shock",
+        "Type": "electric",
+        "Accuracy": 100,
+        "Power": 40
       },
       {
-        "Name": "Thunderbolt",
+        "Name": "Spark",
         "Type": "electric",
-        "Acc": 100,
-        "Power": 70
+        "Accuracy": 100,
+        "Power": 65
       }
     ],
     "ImgSrc": "Pikachu.png"
@@ -218,24 +218,24 @@
     "Speed": 110,
     "IsDead": false,
     "Moves": [
-      {
+        {
         "Name": "Thunderbolt",
         "Type": "electric",
-        "Acc": 100,
-        "Power": 70
-      },
-      {
-        "Name": "Thunder",
+        "Accuracy": 100,
+        "Power": 90
+        },
+        {
+        "Name": "Thunder Shock",
         "Type": "electric",
-        "Acc": 70,
-        "Power": 110
-      },
-      {
+        "Accuracy": 100,
+        "Power": 40
+        },
+        {
         "Name": "Thunder Punch",
         "Type": "electric",
-        "Acc": 90,
-        "Power": 90
-      }
+        "Accuracy": 100,
+        "Power": 75
+        }
     ],
     "ImgSrc": "Raichu.png"
   },
@@ -248,23 +248,23 @@
     "Speed": 85,
     "IsDead": false,
     "Moves": [
-      {
+       {
         "Name": "Ice Beam",
         "Type": "ice",
-        "Acc": 100,
-        "Power": 80
+        "Accuracy": 70,
+        "Power": 90
       },
       {
         "Name": "Blizzard",
         "Type": "ice",
-        "Acc": 80,
-        "Power": 120
+        "Accuracy": 100,
+        "Power": 110
       },
       {
-        "Name": "Thunder",
-        "Type": "electric",
-        "Acc": 70,
-        "Power": 110
+        "Name": "Ice Shard",
+        "Type": "ice",
+        "Accuracy": 95,
+        "Power": 40
       }
     ],
     "ImgSrc": "Articuno.png"
@@ -279,22 +279,22 @@
     "IsDead": false,
     "Moves": [
       {
-        "Name": "Icy Wind",
+        "Name": "Ice Wind",
         "Type": "ice",
-        "Acc": 100,
-        "Power": 70
-      },
-      {
-        "Name": "Surf",
-        "Type": "water",
-        "Acc": 100,
-        "Power": 80
+        "Accuracy": 70,
+        "Power": 55
       },
       {
         "Name": "Blizzard",
         "Type": "ice",
-        "Acc": 80,
-        "Power": 100
+        "Accuracy": 100,
+        "Power": 110
+      },
+      {
+        "Name": "Freeze Dry",
+        "Type": "ice",
+        "Accuracy": 100,
+        "Power": 70
       }
     ],
     "ImgSrc": "Eiscue.png"
